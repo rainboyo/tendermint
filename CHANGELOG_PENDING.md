@@ -10,6 +10,7 @@ Friendly reminder, we have a [bug bounty program](https://hackerone.com/tendermi
 
 - CLI/RPC/Config
   - [config] \#5598 The `test_fuzz` and `test_fuzz_config` P2P settings have been removed. (@erikgrinaker)
+  - [config] \#5728 `fast_sync = "v1"` is no longer supported (@melekes)
 
 - Apps
 
@@ -18,7 +19,6 @@ Friendly reminder, we have a [bug bounty program](https://hackerone.com/tendermi
 - Go API
   - [abci/client, proxy] \#5673 `Async` funcs return an error, `Sync` and `Async` funcs accept `context.Context` (@melekes)
   - [p2p] Removed unused function `MakePoWTarget`. (@erikgrinaker)
-  - [blockchain/v1] \#5728 Remove in favor of v2 (@melekes)
 
 - [libs/os] Kill() and {Must,}{Read,Write}File() functions have been removed. (@alessio)
 
@@ -33,6 +33,7 @@ Friendly reminder, we have a [bug bounty program](https://hackerone.com/tendermi
 - [abci/client] \#5673 `Async` requests return an error if queue is full (@melekes)
 - [mempool] \#5673 Cancel `CheckTx` requests if RPC client disconnects or times out (@melekes)
 - [abci] \#5706 Added `AbciVersion` to `RequestInfo` allowing applications to check ABCI version when connecting to Tendermint. (@marbar3778)
+- [blockchain/v1] \#5728 Remove in favor of v2 (@melekes)
 
 ### BUG FIXES
 
